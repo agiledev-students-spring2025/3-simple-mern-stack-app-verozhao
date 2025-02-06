@@ -22,7 +22,7 @@ const aboutSchema = new Schema(
 )
 
 // create mongoose Model
-const About = mongoose.model('About', aboutSchema)
+const About = mongoose.model('About Us', aboutSchema)
 
 // export the model so other modules can import it
 module.exports = {
