@@ -10,7 +10,7 @@ const About = () => {
         // fetch about data when component mounts
         const fetchAboutData = async () => {
             try {
-                const response = await axios.get('http://localhost:7002')
+                const response = await axios.get('http://localhost:5002/about')
                 setAboutData(response.data)
             } catch (err) {
                 setError('Failed to load about data')
