@@ -29,7 +29,7 @@ app.get('/about', async (req, res) => {
       const aboutData = {
           name: "Veronica Zhao",
           bio: `Hi, this is Veronica. I am a student at NYU studying Computer and Data Science. I'm passionate about web development and creating user-friendly applications. In my free time, I enjoy coding personal projects and learning new technologies. Currently, I'm taking Agile Development and MERN Stack, where I'm learning to build full-stack applications using MongoDB, Express, React, and Node.js.`,
-          imageUrl: "https://drive.google.com/file/d/1ineqE4v4_lmkC8uR8SKXYKdFT11jrEu4/view?usp=sharing"
+          imageUrl: "https://imgur.com/a/1u5bN2Y"
       }
       
       res.json(aboutData)
