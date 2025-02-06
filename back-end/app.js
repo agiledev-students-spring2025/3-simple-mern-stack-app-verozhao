@@ -18,9 +18,29 @@ mongoose
   .then(data => console.log(`Connected to MongoDB`))
   .catch(err => console.error(`Failed to connect to MongoDB: ${err}`))
 
-// load the dataabase models we want to deal with
+// load the database models we want to deal with
 const { Message } = require('./models/Message')
 const { User } = require('./models/User')
+const { About } = require('./models/About')
+
+// a route to handle the about us page
+app.get('/about', async (req, res) => {
+  try {
+      const aboutData = {
+          name: "Veronica Zhao",
+          bio: `Hi, this is Veronica. I am a student at NYU studying Computer and Data Science. I'm passionate about web development and creating user-friendly applications. In my free time, I enjoy coding personal projects and learning new technologies. Currently, I'm taking Agile Development and MERN Stack, where I'm learning to build full-stack applications using MongoDB, Express, React, and Node.js.`,
+          imageUrl: "https://drive.google.com/file/d/1ineqE4v4_lmkC8uR8SKXYKdFT11jrEu4/view?usp=sharing"
+      }
+      
+      res.json(aboutData)
+  } catch (err) {
+      console.error(err)
+      res.status(400).json({ 
+        error: err,
+        status: 'failed to load the about us page',
+      })
+  }
+})
 
 // a route to handle fetching all messages
 app.get('/messages', async (req, res) => {
