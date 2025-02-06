@@ -40,7 +40,7 @@ app.get('/about', async (req, res) => {
         status: 'failed to load the about us page',
       })
   }
-})
+}) 
 
 // a route to handle fetching all messages
 app.get('/messages', async (req, res) => {
