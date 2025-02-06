@@ -28,7 +28,7 @@ app.get('/about', async (req, res) => {
   try {
       const aboutData = {
           name: "Veronica Zhao",
-          bio: `Hi, this is Veronica. I am a student at NYU studying Computer and Data Science. I'm passionate about web development and creating user-friendly applications. In my free time, I enjoy coding personal projects and learning new technologies. Currently, I'm taking Agile Development and MERN Stack, where I'm learning to build full-stack applications using MongoDB, Express, React, and Node.js.`,
+          bio: `Hi, this is Veronica. I am a student at NYU studying Computer and Data Science. I'm passionate about web development and creating user-friendly applications. In my free time, I enjoy coding personal projects and learning new technologies. Currently, I'm taking Agile Development and learning MERN Stack, where I'm learning to build full-stack applications using MongoDB, Express, React, and Node.js.`,
           imageUrl: "https://raw.githubusercontent.com/agiledev-students-spring2025/3-simple-mern-stack-app-verozhao/deb5dc9515fab05f119a8e3f6d30e166607bc519/Veronica_Zhao_headshot.jpg"
       }
       
