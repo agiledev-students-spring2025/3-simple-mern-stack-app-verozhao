@@ -35,7 +35,7 @@ app.get('/about', async (req, res) => {
       res.json(aboutData)
   } catch (err) {
       console.error(err)
-      res.status(400).json({ 
+      res.status(500).json({ 
         error: err,
         status: 'failed to load the about us page',
       })
